@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: #2b0a4c;
+}
+
+form {
+  width: 100%;
+  max-width: 30rem;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  font: inherit;
+  padding: 1.25rem;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  color: white;
+  background: #7643a9;
+  border: 0.125rem solid transparent;
+  border-radius: 1.125rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border-color: #341554;
+  box-shadow: 0 0 0 0.3125rem #c08cf5;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+textarea {
+  min-height: 12.5rem;
+  resize: vertical;
+}
+
+button {
+  border: none;
+  border-radius: 99px;
+  color: white;
+  background: #8b4acb;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  background: #9a43f0;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background: #d9e0f1;
+}
+
+.success,
+.error {
+  text-align: center;
+}
+
+.success {
+  color: greenyellow;
+}
+
+.error {
+  color: tomato;
+}

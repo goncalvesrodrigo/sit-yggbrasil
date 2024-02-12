@@ -1,0 +1,180 @@
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+  background-color: #EDBEF5;
+}
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    z-index: 10;
+    width: 100%;
+    padding: 0.8rem 3%;
+    position: fixed;
+    backdrop-filter: blur(15px);
+    scroll-padding-top: 40px;
+  }
+  
+  header.roll {
+    background-color: var(--color-neutral-40);
+    padding: 0.1rem 3%;
+    transition: 0.5s;
+    opacity: 0.9;
+  }
+  
+  header.roll a {
+    color: #c08cf5;
+    transition: 0.5s;
+    font-weight: 500;
+  }
+  
+  header ul li a:hover {
+    opacity: 0.9;
+    transition: 0.5s;
+  }
+  
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  .logo:hover {
+    opacity: 0.9;
+    transition: 0.5s;
+  }
+  
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .nav-item {
+    margin: 0 20px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.09rem;
+  }
+  
+  .btn-contato a button {
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .btn-contato button {
+    cursor: pointer;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    background-color: var(--color-neutral-60);
+    color: #fff;
+  }
+  
+  .btn-contato button:hover {
+    opacity: 0.9;
+    transition: 0.5s;
+  }
+  
+  .mobile-menu-icon {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: none;
+  }
+  
+  @media screen and (max-width: 775px) {
+    header {
+      backdrop-filter: none;
+    }
+  
+    header.roll {
+      background-color: #0000008f;
+      padding: 0.1rem 3%;
+      transition: 0.5s;
+      opacity: 0.9;
+    }
+  
+    .logo img {
+      width: 70px;
+    }
+  
+    .nav-bar {
+      padding: 0.1rem;
+    }
+  
+    .nav-item {
+      display: none;
+    }
+  
+    .btn-contato {
+      display: none;
+    }
+  
+    .mobile-menu-icon {
+      display: block;
+    }
+  
+    .mobile-menu-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+  
+    .mobile-menu .nav-item {
+      display: block;
+      padding: 1.2rem;
+    }
+  
+    .mobile-menu .btn-contato {
+      display: block;
+      padding: 1rem 2rem;
+    }
+  
+    .mobile-menu .btn-contato button {
+      width: 100%;
+    }
+  
+    .open {
+      display: block;
+    }
+  }
+  
+  ::-webkit-scrollbar {
+    width: 13px;
+    background-color: var(--color-neutral-40);
+  }
+  ::-webkit-scrollbar-thumb {
+    width: 13px;
+    background-color: var(--color-neutral-60);
+  }
